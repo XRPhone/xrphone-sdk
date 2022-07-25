@@ -1,0 +1,35 @@
+{
+  "name": "xrphone-sdk-nodejs",
+  "version": "0.0.1",
+  "description": "XRPhone Node.js SDK for communicating with XRPhone platform.",
+  "author": "XRPhone<hello@xrphone.app>",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "clear; npm-run-all clean --parallel watch:build watch:server --print-label",
+    "build": "npm run clean; tsc",
+    "watch:build": "tsc --watch",
+    "watch:server": "nodemon './dist/index.js' --watch './dist'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XRPhone/xrphone-sdk-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XRPhone/xrphone-sdk-nodejs/issues"
+  },
+  "homepage": "https://github.com/XRPhone/xrphone-sdk-nodejs#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
