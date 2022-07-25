@@ -1,8 +1,8 @@
 /*
-    Type definitions for xrphone-sdk 0.0.1
+    Type definitions for xrphone-sdk-nodejs 0.0.1
     Project: https://xrphone.app
     Definitions by: Jremi <https://github.com/jremi>
-    Definitions: https://github.com/xrphone/xrphone-sdk
+    Definitions: https://github.com/xrphone/xrphone-sdk-nodejs
 */
 
 export type FiatCurrencyCodes = 'USD'
